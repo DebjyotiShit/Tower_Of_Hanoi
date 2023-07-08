@@ -1,6 +1,10 @@
 public class Tower_Of_Hanoi {
     public static void main(String[] args) {
-        function(4,'A','B','C');
+        Scanner input=new Scanner(System.in);
+        System.out.println("Enter Your Number : ");
+        int number=input.nextInt();
+        System.out.println("Your "+number+" digit Tower of hanoi game step are there : ");
+        function(number,'A','B','C');
     }
     public static void function(int number,char src,char aux,char des){
         if(number==1){
